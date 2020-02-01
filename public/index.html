@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Blog de Arturo
+    </title>
+  </head>
+  <body>
+    <div class="comentSection">
+      <h1>
+        Lista de Posts
+      </h1>
+      <label>
+      Filtrado de Posts por Autor
+      </label>
+      <input type="text" id="authorFilter">
+      <button type="button" id="buttonFilter">
+          Filtrar
+      </button>
+      <ol id="commentList">
+
+      </ol>
+      <fieldset>
+          <legend> Agrega un nuevo comentario </legend>
+          <form id="addComment">
+            <div>
+            <label>
+              Titulo
+            </label>
+            <input type="text" placeholder="Arturo" id="commentTitle">
+            </div>
+            <div>
+            <label>
+              Autor
+            </label>
+            <input type="text" placeholder="Nuevo Titulo" id="commentAuthor">
+            </div>
+            <div>
+            <textarea name="comments" placeholder="Escribe aqui tu comentario" id="commentText">
+            </textarea>
+            </div>
+            <button type="submit">
+              Agregar Comentario
+            </button>
+          </form>
+      </fieldset>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
