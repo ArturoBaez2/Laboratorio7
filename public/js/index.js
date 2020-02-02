@@ -1,6 +1,6 @@
 
 function fetchComments(){
-    let url = "http://localhost:8080/blog-api/comentarios";
+    let url = "/blog-api/comentarios";
 
     $.ajax({
       url : url,
@@ -16,7 +16,7 @@ function fetchComments(){
 }
 
 function fetchCommentsByAuthor(autor){
-    let url = "http://localhost:8080/blog-api/comentarios-por-autor?autor=" + autor;
+    let url = "/blog-api/comentarios-por-autor?autor=" + autor;
 
     $.ajax({
       url : url,
@@ -32,7 +32,7 @@ function fetchCommentsByAuthor(autor){
 }
 
 function postComment(commentObj){
-    let url = "http://localhost:8080/blog-api/nuevo-comentario";
+    let url = "/blog-api/nuevo-comentario";
     console.log(commentObj);
     $.ajax({
       url : url,
@@ -52,7 +52,7 @@ function postComment(commentObj){
 }
 
 function deleteComment(id){
-    let url = "http://localhost:8080/blog-api/remover-comentario/" + id;
+    let url = "/blog-api/remover-comentario/" + id;
     $.ajax({
       url : url,
       method : "DELETE",
@@ -67,7 +67,7 @@ function deleteComment(id){
 }
 
 function updateComment(id, commentObj){
-  let url = "http://localhost:8080/blog-api/actualizar-comentario/" + id;
+  let url = "/blog-api/actualizar-comentario/" + id;
   //console.log(commentObj);
     $.ajax({
       url : url,
