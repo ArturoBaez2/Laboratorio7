@@ -1,2 +1,3 @@
-Laboratorio 6 donde utilizamos ajax para hacer una pequena pagina de comentarios
+Laboratorio 7 donde hicimos el deploy de nuestra practica pasada
+
 
